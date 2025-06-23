@@ -1,12 +1,16 @@
 # C:\Users\ashut\OneDrive\Desktop\Note-Agent-main\backend\models\summarizer.py
+# summarizer.py
+import os
+from dotenv import load_dotenv
 import openrouter
-from langchain_openai import OpenAI  # Updated import
+from langchain_openai import OpenAI
 from langchain.chains.summarize import load_summarize_chain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 class Summarizer:
     def __init__(self):
-        openrouter.api_key = "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"  # Replace with your actual API key
+        load_dotenv()
+        openrouter.api_key = os.getenv("OPENROUTER_API_KEY")
         self.llm = OpenAI(
             api_key=openrouter.api_key,
             base_url="https://openrouter.ai/api/v1",
