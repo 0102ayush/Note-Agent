@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-SpeechRecognition
-langchain
-langchain-community
-langchain-openai  # Add this line
-openrouter
-sqlalchemy
-reportlab
