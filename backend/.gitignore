@@ -1,0 +1,42 @@
+# Ignore Python virtual environment
+venv/
+env/
+.venv/
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore SQLite database file
+notes.db
+
+# Ignore audio and export directories
+backend/audio_files/
+backend/exports/
+
+# Ignore IDE/project-specific files
+*.idea/
+*.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore sensitive information (e.g., config with API keys if modified)
+config/config_local.py
+*.env
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore test or temporary files
+*.tmp
+*.bak
